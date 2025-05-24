@@ -1,0 +1,51 @@
+{
+	"expo": {
+		"scheme": "acme",
+		"userInterfaceStyle": "automatic",
+		"orientation": "default",
+		"web": {
+			"output": "static"
+		},
+		"plugins": [
+			[
+				"expo-router",
+				{
+					"origin": "https://n"
+				}
+			],
+			[
+				"expo-camera",
+				{
+					"cameraPermission": "Dar una permiso para usar la cámara",
+					"recordAudioAndroid": true
+				}
+			]
+		],
+		"name": "QR Mobile",
+		"slug": "qr-mobile",
+		"android": {
+			"permissions": [
+				"android.permission.CAMERA",
+				"android.permission.RECORD_AUDIO"
+			],
+			"package": "com.juancam1.qrmobile",
+			"adaptiveIcon": {
+				"foregroundImage": "./src/assets/icon.png",
+				"backgroundColor": "#a855f7"
+			},
+			"edgeToEdgeEnabled": true
+		},
+		"ios": {
+			"bundleIdentifier": "com.juancam1.qrmobile"
+		},
+		"extra": {
+			"router": {
+				"origin": "https://n"
+			},
+			"eas": {
+				"projectId": "a324e3b2-131e-44b5-b71f-d1077c1dad42"
+			}
+		},
+		"owner": "juancam1"
+	}
+}
