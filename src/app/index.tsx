@@ -147,6 +147,9 @@ export default function QrScannerScreen() {
 
 			<TouchableOpacity
 				className="absolute bottom-5 right-5 p-4 rounded-full bg-purple-500"
+				style={{
+					marginBottom: insets.bottom,
+				}}
 				activeOpacity={0.8}
 				onPress={() => setHistorialModal(true)}
 			>
