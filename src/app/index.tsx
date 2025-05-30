@@ -53,9 +53,9 @@ export default function QrScannerScreen() {
 
 	if (!permission) {
 		return (
-			<View className={`flex-1 bg-gray-50 pt-${insets.top}px`}>
+			<View className="flex flex-1 justify-center items-center bg-gray-50">
 				<Text className="text-base text-gray-700 text-center mb-4">
-					Requesting camera permission...
+					Esperando permisos de cámara...
 				</Text>
 			</View>
 		);
@@ -117,7 +117,7 @@ export default function QrScannerScreen() {
 
 			<View className="w-full h-3/5 relative overflow-hidden rounded-xl mb-8 ">
 				<CameraView
-					active
+					active={!scanned}
 					onBarcodeScanned={handleBarCodeScanned}
 					barcodeScannerSettings={{ barcodeTypes: ["qr"] }}
 				/>

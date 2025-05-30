@@ -3,6 +3,7 @@
 		"scheme": "acme",
 		"userInterfaceStyle": "automatic",
 		"orientation": "default",
+		"icon": "./src/assets/icon.png",
 		"web": {
 			"output": "static"
 		},
@@ -16,8 +17,17 @@
 			[
 				"expo-camera",
 				{
-					"cameraPermission": "Dar una permiso para usar la cámara",
+					"cameraPermission": "Permiso para usar la cámara",
 					"recordAudioAndroid": true
+				}
+			],
+			[
+				"expo-splash-screen",
+				{
+					"image": "./src/assets/icon.png",
+					"resizeMode": "contain",
+					"backgroundColor": "#a855f7",
+					"imageWidth": 200
 				}
 			]
 		],
